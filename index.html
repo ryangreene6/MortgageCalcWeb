@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mortgage Calculator</title>
+    <link rel="stylesheet" href="main.css">    
+</head>
+
+<body>
+
+    <div class="container-main">
+
+        <h1>Mortgage Calculator</h1>
+
+
+        <!-- &#40; &#41; -->
+
+
+        <div class="inputs">
+            <label for="mortgageAmt">Mortgage Amount &#40;&#36;&#41;</label>
+            <input type="text" name="mort" id="mortgageAmt" placeholder="200,000">
+        </div>
+
+        <div class="inputs">
+            <label for="interestRate">Interest Rate &#40;&#37;&#41;</label>
+            <input type="text" name="irr" id="interestRate" placeholder="3.21">
+        </div>
+
+        <div class="inputs">
+            <label for="loanTerm">Loan Term &#40;years&#41;</label>
+            <input type="text" name="term" id="loanTerm" placeholder="30">
+        </div>
+        
+        <div class="outputs">
+            <label for="totalCost">Total Cost &#40;principal &plus; interest&#41;</label>
+            <div id="totalCost">$123,456</div>
+        </div>
+
+        <div>
+            <label for="monthlyCost">Monthly Cost</label>
+            <div id="monthlyCost">$423</div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>

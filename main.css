@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
+
+body {
+    font: 1em 'Rubik';
+    margin: 0;
+    padding: 0;
+    background-image:url("media/bg2.png");
+    background-size:contain;
+    width: 100%;
+    height: 100%;
+
+}
+
+* {
+    box-sizing:border-box;
+}
+
+.container-main {
+    background: rgb(255, 255, 255);
+    border: .2em solid rgba(0, 0, 0, 0.849);
+    border-radius: 1em;
+    width: 75%;
+    margin: auto;
+    margin-top:2.5em;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+    padding-bottom: .5em;  
+}
+
+input {
+    width: 100%;
+    height: 3em;
+    border: solid .2em black;
+    border-radius: .5em;
+    font-size: 1em;
+    margin: 0;
+    padding: 0 1em;
+}
+
+label {
+    font-size: 1em;
+    color: rgb(61, 61, 61);
+    line-height: 1.5em;
+}
+
+.outputs {
+    margin-top: 1em;
+}
+
+.inputs {
+    margin-bottom: .75em;
+}
+
+#totalCost, #monthlyCost {
+    font-weight: 700;
+    font-size: 2em;
+}
