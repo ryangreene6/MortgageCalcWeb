@@ -4,10 +4,11 @@ body {
     font: 1em 'Rubik';
     margin: 0;
     padding: 0;
-    background-image:url("media/bg2.png");
-    background-size:contain;
+    background-image:url("media/bg5.png");
+    background-size: cover;
     width: 100%;
     height: 100%;
+    overflow: hidden;
 
 }
 
@@ -19,13 +20,17 @@ body {
     background: rgb(255, 255, 255);
     border: .2em solid rgba(0, 0, 0, 0.849);
     border-radius: 1em;
-    width: 75%;
+    width: 85%;
     margin: auto;
     margin-top:2.5em;
     padding: 1em;
     display: flex;
     flex-direction: column;
 
+}
+
+.container-fill {
+    height: 500px;
 }
 
 h1 {
@@ -42,11 +47,12 @@ input {
     font-size: 1em;
     margin: 0;
     padding: 0 1em;
+    
 }
 
 label {
     font-size: 1em;
-    color: rgb(61, 61, 61);
+    color: rgb(0, 0, 0);
     line-height: 1.5em;
 }
 
@@ -61,4 +67,13 @@ label {
 #totalCost, #monthlyCost {
     font-weight: 700;
     font-size: 2em;
+}
+
+
+@media only screen and (min-width: 500px) {
+
+    .container-main {
+        width: 400px;
+    }
+
 }
