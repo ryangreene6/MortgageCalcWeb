@@ -16,7 +16,8 @@ function update() { //updates calculator
     let total = monthly * n;
     
     //format mortForm with commas after input
-    if (isFinite(mortForm.value)) {
+    if (!!mortForm.value && isFinite(mortForm.value)) { //if mortForm is not empty
+
         mortForm.value = numFormatComma(pv);
     }
        
@@ -28,6 +29,7 @@ function update() { //updates calculator
         totalOut.textContent = '$';
         monthlyOut.textContent = '$';
     }
+
 
 }
 
